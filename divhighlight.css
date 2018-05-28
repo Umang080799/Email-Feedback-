@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px;
+  background-color: lightblue;
+}
+
+.container, .backdrop, textarea {
+  width: 460px;
+  height: 180px;
+}
+
+.highlights, textarea {
+  padding: 10px;
+  font: 20px/28px 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.backdrop { 
+  position: absolute;
+  border-radius: 10px;
+  z-index: 1;
+  border: 2px solid orange;
+  height:400px;
+  border-width:10px;
+  width:900px;
+  background-color: #fff;
+  overflow: auto;
+  margin: 10px 20px 300px -200px;
+}
+
+.highlights {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: black;
+}
+
+textarea {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  border: 2px solid #74637f;
+  border-radius: 0;
+  color: #444;
+  background-color: transparent;
+  overflow: auto;
+}
+
+a {
+  text-decoration: underline;
+  background-color: white;
+}
+
+#err:hover #popup{
+  display : block;
+}
+
+#parse{
+  font: 20px/28px 'Arial', sans-serif;
+  color: black;
+}
+
+
+.tooltip{
+  opacity: 12 !important;
+}
+
+body .tooltip-inner {
+  background-color: green;
+}
